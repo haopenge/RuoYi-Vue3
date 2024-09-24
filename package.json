@@ -17,9 +17,12 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "2.3.1",
+    "@types/codemirror": "^5.60.15",
     "@vueup/vue-quill": "1.2.0",
     "@vueuse/core": "10.11.0",
     "axios": "0.28.1",
+    "codemirror": "^5.65.18",
+    "codemirror-editor-vue3": "^2.8.0",
     "echarts": "5.5.1",
     "element-plus": "2.7.6",
     "file-saver": "2.0.5",
@@ -36,9 +39,9 @@
     "@vitejs/plugin-vue": "5.0.5",
     "sass": "1.77.5",
     "unplugin-auto-import": "0.17.6",
+    "unplugin-vue-setup-extend-plus": "1.0.1",
     "vite": "5.3.2",
     "vite-plugin-compression": "0.5.1",
-    "vite-plugin-svg-icons": "2.0.1",
-    "unplugin-vue-setup-extend-plus": "1.0.1"
+    "vite-plugin-svg-icons": "2.0.1"
   }
 }
