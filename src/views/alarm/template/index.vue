@@ -2,7 +2,9 @@
   <div class="app-container">
     <el-form :model="queryParams" ref="queryRef" :inline="true" v-show="showSearch" label-width="68px">
       <el-form-item label="是否启用" prop="enable">
-        <el-select v-model="queryParams.enable" placeholder="请选择是否启用" clearable>
+        <el-select v-model="queryParams.enable" placeholder="请选择是否启用" clearable
+                   style="width: 166px"
+        >
           <el-option
             v-for="dict in sys_normal_disable"
             :key="dict.value"
@@ -12,7 +14,9 @@
         </el-select>
       </el-form-item>
       <el-form-item label="模板类型" prop="type">
-        <el-select v-model="queryParams.type" placeholder="请选择模板类型" clearable>
+        <el-select v-model="queryParams.type" placeholder="请选择模板类型" clearable
+                   style="width: 166px"
+        >
           <el-option
             v-for="dict in alarm_type"
             :key="dict.value"

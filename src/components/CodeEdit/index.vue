@@ -47,7 +47,7 @@ codeTypeMap.value.set("JavaScript", "text/javascript");
 codeTypeMap.value.set("Json", "application/json");
 codeTypeMap.value.set("Shell", "text/x-sh");
 
-const codeType = ref<string>("Dockerfile");
+const codeType = ref<string>("Json");
 const typeChange = (value: string) => {
   console.log('typeChange = ' + value);
   let temp = codeMirrorVo.value;
@@ -61,11 +61,7 @@ const typeChange = (value: string) => {
 
 const cmRef = ref<CmComponentRef>();
 const codeMirrorVo = ref<CodeMirrorVo>({
-  value: `var i = 0;
-for (; i < 9; i++) {
-    console.log(i);
-    // more statements
-}`,
+  value: `{}`,
   cmOptions: {
     mode: "application/json",
     theme: "seti"
